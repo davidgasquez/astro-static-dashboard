@@ -1,0 +1,28 @@
+{
+  "name": "Static Data Dashboard",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "html.format.templating": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+          "strings": "on"
+        },
+        "tailwindCSS.includeLanguages": {
+          "astro": "html"
+        }
+      },
+      "extensions": [
+		"esbenp.prettier-vscode",
+		"astro-build.astro-vscode",
+		"yzhang.markdown-all-in-one",
+		"davidanson.vscode-markdownlint",
+		"stylelint.vscode-stylelint",
+		"bradlc.vscode-tailwindcss",
+		"Vue.volar"
+	]
+    }
+  },
+  "remoteUser": "node"
+}
