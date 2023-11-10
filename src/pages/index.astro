@@ -1,6 +1,7 @@
 ---
 import Plot from "../components/Plot.vue";
 import Mosaic from "../components/Mosaic.vue";
+import Chart from "../components/Chart.astro";
 ---
 
 <html lang="en">
@@ -46,6 +47,10 @@ import Mosaic from "../components/Mosaic.vue";
           container.innerHTML = my_plot.outerHTML;
         }
       </script>
+
+      <h2>Obsevable Astro Component</h2>
+      <p>This one might be actually rendered at build time?</p>
+      <Chart />
     </main>
   </body>
 </html>
