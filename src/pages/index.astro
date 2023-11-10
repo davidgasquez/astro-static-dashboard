@@ -1,12 +1,12 @@
 ---
-import Plot from "../components/Plot.vue";
+import Chart from "../components/Chart.vue";
 import Mosaic from "../components/Mosaic.vue";
-import Chart from "../components/Chart.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <title>Serverless Dashboard</title>
   </head>
@@ -19,38 +19,11 @@ import Chart from "../components/Chart.astro";
         "static" datasets.
       </p>
 
-      <h2>Observable Plot + Vue</h2>
-      <Plot client:only />
-      <!-- <OJS /> -->
-      <h2>Mosaic Plot</h2>
-      <Mosaic client:only />
+      <h2><a href="https://observablehq.com/plot/getting-started"> Observable</a> Plot</h2>
+      <Chart client:only="vue" />
 
-      <h2>Observable Raw</h2>
-      <div id="container"></div>
-
-      <script>
-        import * as Plot from "@observablehq/plot";
-
-        var penguins = await fetch(
-          "https://raw.githubusercontent.com/davidgasquez/static-data-dashboard/f18c0051a43426e390936d2a08628e43499c68da/src/assets/penguins.json"
-        ).then((res) => res.json());
-
-        const my_plot = Plot.plot({
-          marks: [
-            Plot.dot(penguins, { x: "culmen_length_mm", y: "culmen_depth_mm" }),
-          ],
-        });
-
-        const container = document.getElementById("container");
-
-        if (container) {
-          container.innerHTML = my_plot.outerHTML;
-        }
-      </script>
-
-      <h2>Obsevable Astro Component</h2>
-      <p>This one might be actually rendered at build time?</p>
-      <Chart />
+      <h2><a href="https://uwdata.github.io/mosaic/examples/">Mosaic</a> with DuckDB</h2>
+      <Mosaic client:only="vue" />
     </main>
   </body>
 </html>
