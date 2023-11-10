@@ -25,7 +25,9 @@ onMounted(async () => {
 
   // create an area chart, returned as an HTML element
   // you can subsequently add this to your webpage
-  const chart = vg.plot(vg.areaY(vg.from("stocks"), { x: "Date", y: "Close" }));
+  const chart = vg.plot(
+    vg.areaY(vg.from("stocks"), { x: "Date", y: "Volume", fill: "Symbol" })
+  );
 
   container.value.appendChild(chart);
 });

@@ -7,14 +7,14 @@ import Mosaic from "../components/Mosaic.vue";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Dashboard</title>
   </head>
   <body>
     <main>
       <h1>Dashboard</h1>
+
+      <p>Static website showcasing how to do a simple dashboard with remote data. </p>
 
       <Plot client:only />
 
@@ -27,7 +27,6 @@ import Mosaic from "../components/Mosaic.vue";
       <br />
 
        Don't forget to increment the counter. Is important for our internal analytics!
-
 
       <Counter client:only />
     </main>

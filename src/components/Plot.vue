@@ -1,7 +1,11 @@
 <script setup>
 import * as Plot from "@observablehq/plot";
 import PlotFigure from "../components/PlotFigure.js";
-import penguins from "../assets/penguins.json";
+
+// Get JSON from https://raw.githubusercontent.com/davidgasquez/static-data-dashboard/f18c0051a43426e390936d2a08628e43499c68da/src/assets/penguins.json
+var penguins = await fetch(
+  "https://raw.githubusercontent.com/davidgasquez/static-data-dashboard/f18c0051a43426e390936d2a08628e43499c68da/src/assets/penguins.json"
+).then((res) => res.json());
 </script>
 
 <template>
