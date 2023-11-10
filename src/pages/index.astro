@@ -1,5 +1,5 @@
 ---
-import Counter from "../components/Counter.vue";
+import OJS from "../components/OJS.astro";
 import Plot from "../components/Plot.vue";
 import Mosaic from "../components/Mosaic.vue";
 ---
@@ -14,12 +14,39 @@ import Mosaic from "../components/Mosaic.vue";
     <main>
       <h1>Serverless Dashboard</h1>
 
-      <p>This dashboard is served statically! It will pull and display the latest "static" datasets.</p>
+      <p>
+        This dashboard is served statically! It will pull and display the latest
+        "static" datasets.
+      </p>
 
-      <h2>Observable Plot</h2>
+      <h2>Observable Plot + Vue</h2>
       <Plot client:only />
+      <!-- <OJS /> -->
       <h2>Mosaic Plot</h2>
       <Mosaic client:only />
+
+      <h2>Observable Raw</h2>
+      <div id="container"></div>
+
+      <script>
+        import * as Plot from "@observablehq/plot";
+
+        var penguins = await fetch(
+          "https://raw.githubusercontent.com/davidgasquez/static-data-dashboard/f18c0051a43426e390936d2a08628e43499c68da/src/assets/penguins.json"
+        ).then((res) => res.json());
+
+        const my_plot = Plot.plot({
+          marks: [
+            Plot.dot(penguins, { x: "culmen_length_mm", y: "culmen_depth_mm" }),
+          ],
+        });
+
+        const container = document.getElementById("container");
+
+        if (container) {
+          container.innerHTML = my_plot.outerHTML;
+        }
+      </script>
     </main>
   </body>
 </html>
