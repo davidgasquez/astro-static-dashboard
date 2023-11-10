@@ -1,3 +1,3 @@
-# 👁️‍🗨️ Data Dashboard from Static Remote Datasets
+# 📊 Serverless Dashboard
 
-Just a very minimal static dashboard querying remote data sources.
+Prototyping how serverless dashboards could work.

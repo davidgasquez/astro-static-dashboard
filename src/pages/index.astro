@@ -8,27 +8,18 @@ import Mosaic from "../components/Mosaic.vue";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Dashboard</title>
+    <title>Serverless Dashboard</title>
   </head>
   <body>
     <main>
-      <h1>Dashboard</h1>
+      <h1>Serverless Dashboard</h1>
 
-      <p>Static website showcasing how to do a simple dashboard with remote data. </p>
+      <p>This dashboard is served statically! It will pull and display the latest "static" datasets.</p>
 
+      <h2>Observable Plot</h2>
       <Plot client:only />
-
-      <br />
-      <br />
-
+      <h2>Mosaic Plot</h2>
       <Mosaic client:only />
-
-      <br />
-      <br />
-
-       Don't forget to increment the counter. Is important for our internal analytics!
-
-      <Counter client:only />
     </main>
   </body>
 </html>

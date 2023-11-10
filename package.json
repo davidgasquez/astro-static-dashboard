@@ -1,5 +1,5 @@
 {
-  "name": "static-data-dashboard",
+  "name": "serverless-dashboard",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
