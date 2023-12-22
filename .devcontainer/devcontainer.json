@@ -14,14 +14,14 @@
         }
       },
       "extensions": [
-		"esbenp.prettier-vscode",
-		"astro-build.astro-vscode",
-		"yzhang.markdown-all-in-one",
-		"davidanson.vscode-markdownlint",
-		"stylelint.vscode-stylelint",
-		"bradlc.vscode-tailwindcss",
-		"Vue.volar"
-	]
+        "esbenp.prettier-vscode",
+        "astro-build.astro-vscode",
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "stylelint.vscode-stylelint",
+        "bradlc.vscode-tailwindcss",
+        "Vue.volar"
+      ]
     }
   },
   "remoteUser": "node"

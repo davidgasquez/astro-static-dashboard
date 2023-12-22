@@ -10,14 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/vue": "^3.0.4",
-    "astro": "^3.4.4",
-    "typescript": "^5.2.2",
-    "vue": "^3.3.8"
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/vue": "^4.0.5",
+    "astro": "^4.0.7",
+    "typescript": "^5.3.3",
+    "vue": "^3.3.13"
   },
   "devDependencies": {
-    "@observablehq/plot": "^0.6.11",
+    "@observablehq/plot": "^0.6.13",
     "@uwdata/vgplot": "^0.3.4",
     "d3": "^7.8.5"
   }
