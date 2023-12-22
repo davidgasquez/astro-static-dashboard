@@ -8,13 +8,6 @@ import * as Plot from "@observablehq/plot";
 
 let container = ref();
 
-// let props = defineProps({
-//   parameter: {
-//     type: String,
-//     required: true,
-//   },
-// });
-
 onMounted(async () => {
   let reply = await fetch(
     "https://raw.githubusercontent.com/davidgasquez/static-data-dashboard/f18c0051a43426e390936d2a08628e43499c68da/src/assets/penguins.json"

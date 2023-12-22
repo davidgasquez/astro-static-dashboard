@@ -1,6 +1,7 @@
 ---
 import Chart from "../components/Chart.vue";
 import Mosaic from "../components/Mosaic.vue";
+import "../style.css";
 ---
 
 <html lang="en">
@@ -14,15 +15,18 @@ import Mosaic from "../components/Mosaic.vue";
     <main>
       <h1>Serverless Dashboard</h1>
 
-      <p>
-        This dashboard is served statically! It will pull and display the latest
-        "static" datasets.
-      </p>
+      <p>Dashboards, served statically!</p>
 
-      <h2><a href="https://observablehq.com/plot/getting-started"> Observable</a> Plot</h2>
-      <Chart client:only="vue" />
+      <h2>
+        <a href="https://observablehq.com/plot/getting-started"> Observable</a>
+         Plot
+      </h2>
+      <Chart client:load />
 
-      <h2><a href="https://uwdata.github.io/mosaic/examples/">Mosaic</a> with DuckDB</h2>
+      <h2>
+        <a href="https://uwdata.github.io/mosaic/examples/">Mosaic</a> with
+        DuckDB
+      </h2>
       <Mosaic client:only="vue" />
     </main>
   </body>
