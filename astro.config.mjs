@@ -5,6 +5,6 @@ import vue from "@astrojs/vue";
 // https://astro.build/config
 export default defineConfig({
   site: "https://davidgasquez.github.io",
-  base: "/serverless-dashboard",
+  base: "/astro-static-dashboard",
   integrations: [vue()],
 });

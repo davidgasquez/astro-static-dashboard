@@ -1,5 +1,5 @@
 {
-  "name": "serverless-dashboard",
+  "name": "astro-static-dashboard",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
