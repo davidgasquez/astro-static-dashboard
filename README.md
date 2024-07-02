@@ -2,7 +2,7 @@
 
 Prototyping how serverless dashboards could work.
 
-### Why not use Evidence / Quarto / Observable Framework?
+### Why don't you use Evidence / Quarto / Observable Framework?
 
 - Is quite minimal and can be heavily optimized/customized
 - It gives me more flexibility. E.g: using duckdb, wasm, Python, js, ...
