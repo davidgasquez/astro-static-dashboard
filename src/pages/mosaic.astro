@@ -1,5 +1,5 @@
 ---
-import Chart from "../components/Chart.vue";
+import MosaicChart from "../components/MosaicChart.vue";
 import "../style.css";
 ---
 
@@ -15,17 +15,11 @@ import "../style.css";
       <h1>Astro Static Dashboards</h1>
 
       <p>Dashboards, served statically!</p>
-
       <h2>
-        <a href="https://observablehq.com/plot/getting-started"> Observable</a> Plot
+        <a href="https://uwdata.github.io/mosaic/examples/">Mosaic</a> with
+        DuckDB
       </h2>
-
-      <Chart client:load />
-
-      <br />
-
-      <!-- Also, <a href="/astro-static-dashboard/mosaic">Mosaic</a> with DuckDB. -->
-
+      <MosaicChart client:only="vue" />
     </main>
   </body>
 </html>
